@@ -25,5 +25,5 @@ jar {
         attributes 'Main-Class': 'App'
     }
     from configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    archiveFileName = "myname.jar"
 }
-archivesBaseName = 'myname'
